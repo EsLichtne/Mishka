@@ -18,7 +18,14 @@
   <header class="header">
     <nav class="header__navigation navigation">
       <div class="navigation__hat">
-        <a class="navigation__logo logo" href="index.html"></a>
+        <a class="navigation__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1024px)" srcset="img/logo/logo-desktop.svg" width="149" height="72">
+            <source media="(min-width: 640px)" srcset="img/logo/logo-tablet.svg" width="113" height="46">
+            <img class="logo__image" src="img/logo/logo-mobile.svg" width="86" height="35"
+              alt="Логотип магазина Мишка.">
+          </picture>
+        </a>
         <button class="navigation__button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -205,8 +212,10 @@
         </li>
       </ul>
     </section>
-    <a class="footer__copyright" href="https://htmlacademy.ru/intensive/adaptive"
-      aria-label="Сайт HTML Academy.">Разработано</a>
+    <a class="footer__copyright academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="academy-logo__text">Разработано</span>
+      <img class="academy-logo__image" src="img/logo/htmlacademy.svg" width="27" height="35" alt="Сайт HTML Academy.">
+    </a>
   </footer>
 </body>
 
