@@ -1,0 +1,28 @@
+@import "../common/variables";
+
+.user-list__link {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background-color: @text-primary;
+  }
+}
+
+.user-list__item--search .user-list__link {
+  &::before {
+    mask: url("../img/sprite.svg#search") no-repeat center;
+  }
+}
+
+.user-list__item--basket .user-list__link {
+  &::before {
+    mask: url("../img/sprite.svg#basket") no-repeat center;
+  }
+}
