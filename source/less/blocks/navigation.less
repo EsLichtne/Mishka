@@ -3,6 +3,8 @@
 @import "../common/animation.less";
 
 .navigation {
+  z-index: 3;
+
   &--open {
     @media (max-width: @mobile) {
       position: absolute;
@@ -56,11 +58,6 @@
       height: 1px;
       background-color: rgba(0, 0, 0, 0.1);
     }
-
-    // @media (min-width: @tablet) {
-    //   left: -50px;
-    //   width: calc(100% + 100px);
-    // }
   }
 
   @media (max-width: @mobile) {
@@ -218,12 +215,18 @@
         width: 18px;
         height: 18px;
         background-color: @text-primary;
+        opacity: 0.2;
 
         @media (min-width: @tablet) {
           position: static;
           margin: 0;
           transform: none;
         }
+      }
+
+      &:hover::before {
+        background-color: @color-accent;
+        opacity: 1;
       }
 
       &--search {
@@ -302,6 +305,14 @@
 
   @media (min-width: @desktop) {
     font-size: 17px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
