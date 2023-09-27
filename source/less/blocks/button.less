@@ -1,0 +1,45 @@
+@import "../common/variables.less";
+
+.button {
+  display: grid;
+  place-content: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &--primary {
+    padding: 16px;
+    font-size: 18px;
+    line-height: 20px;
+    color: @text-secondary;
+    background-color: @color-primary;
+    border: 2px solid @text-secondary;
+
+    @media (min-width: @tablet) {
+      font-size: 17px;
+      line-height: 20px;
+    }
+
+    &:hover {
+      color: @color-primary;
+      background-color: @text-secondary;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--secondary {
+    padding: 18px;
+    font-size: 17px;
+    line-height: 16px;
+    color: @color-primary;
+    background-color: @color-accent;
+    border: none;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
+  }
+}

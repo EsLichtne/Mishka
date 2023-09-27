@@ -214,8 +214,7 @@
         transform: translateY(-50%);
         width: 18px;
         height: 18px;
-        background-color: @text-primary;
-        opacity: 0.2;
+        background-color: rgba(0, 0, 0, 0.2);
 
         @media (min-width: @tablet) {
           position: static;
@@ -226,7 +225,6 @@
 
       &:hover::before {
         background-color: @color-accent;
-        opacity: 1;
       }
 
       &--search {
@@ -308,7 +306,7 @@
   }
 
   &:hover {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {

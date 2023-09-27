@@ -12,3 +12,26 @@ navButton.addEventListener("click", function () {
     navClue.textContent = "Открыть меню.";
   }
 })
+
+let modalOpenButton = document.querySelector(".button--modal");
+let modalCloseButton = document.querySelector(".modal__button");
+let modal = document.querySelector(".modal");
+
+modalOpenButton.addEventListener("click", function () {
+  modal.showModal();
+})
+
+modalCloseButton.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  modal.close();
+})
+
+dialogElement.addEventListener("click", closeOnBackDropClick);
+
+function closeOnBackDropClick({ currentTarget, target }) {
+  const dialogElement = currentTarget;
+  const isClickedOnBackDrop = target === dialogElement;
+  if (isClickedOnBackDrop) {
+    dialogElement.close();
+  }
+}

@@ -1,0 +1,23 @@
+@import "../common/variables.less";
+
+.features {
+  font-size: 15px;
+  line-height: 20px;
+  color: @text-secondary;
+
+  @media (min-width: @tablet) {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
+.features__wrapper {
+  display: grid;
+  grid-template-columns: 97px auto;
+  padding: 9px 0 13px;
+  border-bottom: 1px solid #ececec;
+}
+
+.features__value {
+  margin: 0;
+}

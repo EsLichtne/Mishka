@@ -92,52 +92,44 @@
       </nav>
     </section>
     <section class="popular">
-      <div class="container">
+      <div class="container popular__wrapper">
         <p class="popular__product title title--secondary">Вязаные корзинки</p>
         <h2 class="popular__title">Товар недели</h2>
         <p class="popular__description">Экологически чистая пряжа,
           ручная работа. Доступны в шести расцветках и трёх размерах.</p>
         <dl class="popular__list features">
-          <dt class="features__name">Цвет:</dt>
-          <dd class="features__value">Тиффани/серый</dd>
-          <dt class="features__name">Диаметр:</dt>
-          <dd class="features__value">25 см</dd>
-          <dt class="features__name">Высота:</dt>
-          <dd class="features__value">15 см</dd>
+          <div class="features__wrapper">
+            <dt class="features__name">Цвет:</dt>
+            <dd class="features__value">Тиффани/серый</dd>
+          </div>
+          <div class="features__wrapper">
+            <dt class="features__name">Диаметр:</dt>
+            <dd class="features__value">25 см</dd>
+          </div>
+          <div class="features__wrapper">
+            <dt class="features__name">Высота:</dt>
+            <dd class="features__value">15 см</dd>
         </dl>
-        <picture>
-          <source type="image/webp" media="(min-width: 1024px)"
-            srcset="img/triple-set-desktop.webp, img/triple-set-desktop@2x.webp 2x" width="525" height="636">
-          <source type="image/webp" media="(min-width: 640px)"
-            srcset="img/triple-set-tablet.webp, img/triple-set-tablet@2x.webp 2x" width="334" height="404">
-          <source type="image/webp" srcset="img/triple-set-mobile.webp, img/triple-set-mobile@2x.webp 2x" width="260"
-            height="315">
-          <source media="(min-width: 1024px)" srcset="img/triple-set-desktop.jpg, img/triple-set-desktop@2x.jpg 2x"
-            width="525" height="636">
-          <source media="(min-width: 640px)" srcset="img/triple-set-tablet.jpg, img/triple-set-tablet@2x.jpg 2x"
-            width="334" height="404">
-          <img class="popular__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
-            width="260" height="315"
-            alt="Руки держат три вязаные корзинки: две серо-бирюзового цвета и одна бело-розового.">
-        </picture>
+        <div class="popular__image-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)"
+              srcset="img/triple-set-desktop.webp, img/triple-set-desktop@2x.webp 2x" width="525" height="636">
+            <source type="image/webp" media="(min-width: 640px)"
+              srcset="img/triple-set-tablet.webp, img/triple-set-tablet@2x.webp 2x" width="334" height="404">
+            <source type="image/webp" srcset="img/triple-set-mobile.webp, img/triple-set-mobile@2x.webp 2x" width="260"
+              height="315">
+            <source media="(min-width: 1024px)" srcset="img/triple-set-desktop.jpg, img/triple-set-desktop@2x.jpg 2x"
+              width="525" height="636">
+            <source media="(min-width: 640px)" srcset="img/triple-set-tablet.jpg, img/triple-set-tablet@2x.jpg 2x"
+              width="334" height="404">
+            <img class="popular__image" src="img/triple-set-mobile.jpg" srcset="img/triple-set-mobile@2x.jpg 2x"
+              width="260" height="315"
+              alt="Руки держат три вязаные корзинки: две серо-бирюзового цвета и одна бело-розового.">
+          </picture>
+        </div>
         <p class="popular__price">Цена: 990 руб.</p>
-        <button class="popular__button button button--primary">Заказать</button>
+        <button class="popular__button button button--primary button--modal">Заказать</button>
       </div>
-      <div class="popular__modal modal">
-        <h2 class="modal__title title title--secondary">Добавить в корзину</h2>
-        <span class="modal__text">Выберите размер:</span>
-        <ul class="modal__list">
-          <li class="modal__item">
-            <button class="modal__size" type="button">S</button>
-          </li>
-          <li class="modal__item">
-            <button class="modal__size" type="button">M</button>
-          </li>
-          <li class="modal__item">
-            <button class="modal__size" type="button">L</button>
-          </li>
-        </ul>
-        <button class="modal__button button button--secondary" type="button">Добавить</button>
       </div>
     </section>
     <section class="about">
@@ -257,6 +249,29 @@
       </a>
     </div>
   </footer>
+  <dialog class="page__modal modal" onclick="closeOnBackDropClick(event)">
+    <div class="modal__wrapper basket-adder">
+      <h2 class="basket-adder__title">Добавить в&nbsp;корзину</h2>
+      <p class=" basket-adder__text">Выберите размер:</p>
+      <form class="basket-adder__form" action="https://echo.htmlacademy.ru/" method="post">
+        <ul class="basket-adder__list">
+          <li class="basket-adder__item">
+            <input class="basket-adder__radio" type="radio" id="s-size" name="size" value="s" checked>
+            <label class="basket-adder__label" for="s-size">S</label>
+          </li>
+          <li class="basket-adder__item">
+            <input class="basket-adder__radio" type="radio" id="m-size" name="size" value="m">
+            <label class="basket-adder__label" for="m-size">M</label>
+          </li>
+          <li class="basket-adder__item">
+            <input class="basket-adder__radio" type="radio" id="l-size" name="size" value="l">
+            <label class="basket-adder__label" for="l-size">L</label>
+          </li>
+        </ul>
+        <button class="modal__button basket-adder__button button button--secondary" type="submit">Добавить</button>
+      </form>
+    </div>
+  </dialog>
   <script src="js/script.js"></script>
 </body>
 

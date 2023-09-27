@@ -1,0 +1,97 @@
+@import "../common/variables.less";
+@import "../common/mixins.less";
+
+.basket-adder {
+  padding: 28px 0 46px;
+  text-align: center;
+  background-color: @color-primary;
+
+  @media (min-width: @tablet) {
+    padding-top: 37px;
+  }
+}
+
+.basket-adder__title {
+  max-width: 176px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    max-width: 381px;
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 57px;
+  }
+}
+
+.basket-adder__text {
+  margin: 0;
+  margin-bottom: 21px;
+  font-size: 15px;
+  line-height: 30px;
+  color: @text-secondary;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 19px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+}
+
+.basket-adder__form {
+  width: calc(100% - 60px);
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: calc(100% - 216px);
+  }
+}
+
+.basket-adder__list {
+  .list-reset();
+  display: flex;
+  gap: 7px;
+  margin-bottom: 31px;
+}
+
+.basket-adder__item {
+  flex-grow: 1;
+}
+
+.basket-adder__label {
+  display: block;
+  padding: 18px 0;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: @text-secondary;
+  background-color: @color-primary;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+
+  &:hover {
+    border-color: rgba(68, 68, 68, 0.3);
+  }
+
+  &:active {
+    border-color: @color-accent;
+  }
+}
+
+.basket-adder__radio {
+  appearance: none;
+  margin: 0;
+
+  &:checked+.basket-adder__label {
+    border-color: @color-accent;
+  }
+}
+
+.basket-adder__button {
+  width: 100%;
+}

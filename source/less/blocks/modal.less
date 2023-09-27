@@ -1,0 +1,14 @@
+@import "../common/variables.less";
+@import "../common/mixins.less";
+
+.modal {
+  padding: 0;
+  border: none;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+  outline: 1px solid #c6c6c6;
+
+  &::backdrop {
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+  }
+}
