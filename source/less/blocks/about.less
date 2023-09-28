@@ -1,0 +1,175 @@
+@import "../common/variables.less";
+@import "../common/mixins.less";
+
+.about {
+  padding: 31px 0 29px;
+  background-color: @color-primary;
+
+  @media (min-width: @tablet) {
+    padding: 55px 0 83px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 68px 0 90px;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: @desktop) {
+    width: calc(100% - 348px);
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 39px;
+  }
+}
+
+.about__list {
+  .list-reset();
+  display: grid;
+  row-gap: 30px;
+
+  @media (min-width: @tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 58px;
+    column-gap: 70px;
+  }
+
+  @media (min-width: @desktop) {
+    column-gap: 85px;
+  }
+}
+
+.about__item {
+  &::before {
+    content: "";
+    display: block;
+    background-repeat: no-repeat;
+  }
+
+  &--ecological {
+    &::before {
+      width: 33px;
+      height: 38px;
+      margin-bottom: 16px;
+      background-image: url("../img/sprite.svg#ecological");
+
+      @media (min-width: @tablet) {
+        margin-bottom: 18px;
+      }
+    }
+
+    @media (min-width: @tablet) {
+      order: 1;
+    }
+  }
+
+  &--cheap {
+    &::before {
+      width: 47px;
+      height: 27px;
+      margin-bottom: 26px;
+      background-image: url("../img/sprite.svg#cheap");
+
+      @media (min-width: @tablet) {
+        margin-bottom: 26px;
+      }
+    }
+
+    @media (min-width: @tablet) {
+      order: 3;
+    }
+  }
+
+  &--likes {
+    &::before {
+      width: 34px;
+      height: 27px;
+      margin-bottom: 21px;
+      background-image: url("../img/sprite.svg#likes");
+
+      @media (min-width: @tablet) {
+        margin-bottom: 21px;
+      }
+    }
+
+    @media (min-width: @tablet) {
+      order: 5;
+    }
+  }
+
+  &--lovingly {
+    &::before {
+      width: 35px;
+      height: 35px;
+      margin-bottom: 17px;
+      background-image: url("../img/sprite.svg#lovingly");
+
+      @media (min-width: @tablet) {
+        margin-bottom: 19px;
+      }
+
+      @media (min-width: @desktop) {
+        margin-bottom: 18px;
+      }
+    }
+
+    @media (min-width: @tablet) {
+      order: 2;
+    }
+  }
+
+  &--support {
+    &::before {
+      width: 55px;
+      height: 23px;
+      margin-bottom: 26px;
+      background-image: url("../img/sprite.svg#support");
+
+      @media (min-width: @tablet) {
+        margin-bottom: 28px;
+      }
+    }
+
+    @media (min-width: @tablet) {
+      order: 4;
+    }
+  }
+
+  &--gift {
+    &::before {
+      width: 33px;
+      height: 32px;
+      margin-bottom: 20px;
+      background-image: url("../img/sprite.svg#gift");
+
+      @media (min-width: @tablet) {
+        margin-bottom: 21px;
+      }
+    }
+
+    @media (min-width: @tablet) {
+      order: 6;
+    }
+  }
+}
+
+.about__text {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: 700;
+
+  @media (min-width: @tablet) {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
