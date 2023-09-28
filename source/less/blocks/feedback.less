@@ -1,0 +1,35 @@
+@import "../common/variables.less";
+
+.feedback__description {
+  margin: 0;
+  margin-bottom: 33px;
+  font-size: 15px;
+  line-height: 30px;
+  color: @text-secondary;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 61px;
+    font-size: 17px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 44px;
+  }
+}
+
+.feedback__author {
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+
+  @media (min-width: @tablet) {
+    font-size: 18px;
+  }
+}
+
+.feedback__tag {
+  font-weight: 400;
+  font-style: normal;
+  text-decoration: none;
+  color: @text-secondary;
+}

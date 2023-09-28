@@ -54,7 +54,17 @@
 
 .hero__image {
   display: block;
+  width: 320px;
+  height: auto;
   margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1150px;
+  }
 }
 
 .hero__navigation {

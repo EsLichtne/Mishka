@@ -1,1 +1,77 @@
-//
+@import "../common/variables.less";
+
+.reviews {
+  padding: 29px 0 45px;
+
+  @media (min-width: @tablet) {
+    padding: 82px 0 115px;
+    background-image: url("../img/napkin.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 350px 457px;
+  }
+}
+
+.reviews__wrapper {
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: auto 175px;
+    grid-auto-flow: dense;
+    align-items: start;
+  }
+
+  @media (min-width: @desktop) {
+    padding-left: 174px;
+  }
+}
+
+.reviews__title {
+  margin: 0;
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet) {
+    grid-column: 1 / 2;
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 35px;
+  }
+}
+
+.reviews__slider {
+  margin-bottom: 38px;
+
+  @media (min-width: @tablet) {
+    position: relative;
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: auto 175px;
+  }
+}
+
+.reviews__feedback {
+  margin: 0;
+  margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    grid-column: 1 / -1;
+    margin-bottom: 0;
+  }
+}
+
+.reviews__pagination {
+  @media (min-width: @tablet) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 175px;
+  }
+}
+
+.reviews__button {
+  @media (min-width: @tablet) {
+    grid-column: 2 / -1;
+  }
+}
