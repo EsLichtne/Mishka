@@ -1,24 +1,24 @@
 @import "../common/variables.less";
 
 .title {
-  line-height: 30px;
+  line-height: min(3rem, 45px);
   font-weight: 700;
 
   &--primary {
-    font-size: 27px;
+    font-size: min(2.7rem, 40px);
   }
 
   &--secondary {
-    font-size: 25px;
+    font-size: min(2.5rem, 40px);
   }
 
   @media (min-width: @tablet) {
-    font-size: 43px;
-    line-height: 50px;
+    font-size: min(4.3rem, 55px);
+    line-height: min(5rem, 64px);
   }
 
   @media (min-width: @desktop) {
-    font-size: 53px;
-    line-height: 57px;
+    font-size: min(5.3rem, 59px);
+    line-height: min(5.7rem, 63px);
   }
 }
