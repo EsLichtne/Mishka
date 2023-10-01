@@ -1,0 +1,40 @@
+@import "../common/variables.less";
+
+.footer {
+  background-color: @color-secondary;
+
+  @media (min-width: @tablet) {
+    padding: 51px 0 58px;
+  }
+}
+
+.footer__wrapper {
+  display: grid;
+  padding: 25px 0 23px;
+
+  @media (min-width: @tablet) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+}
+
+.footer__logo {
+  @media (max-width: @mobile) {
+    display: none;
+  }
+}
+
+.footer__social {
+  width: 142px;
+  margin: 0 auto;
+}
+
+.footer__copyright {
+  width: 184px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    justify-self: end;
+    margin: 0;
+  }
+}

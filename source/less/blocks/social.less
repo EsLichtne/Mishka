@@ -1,1 +1,49 @@
-//
+@import "../common/variables.less";
+@import "../common/mixins.less";
+
+.social {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+    border: none;
+  }
+}
+
+.social__list {
+  .list-reset();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 29px;
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: #231f20;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vk {
+    mask-image: url("../img/sprite.svg#vk");
+  }
+
+  &--youtube {
+    mask-image: url("../img/sprite.svg#youtube");
+  }
+
+  &--telegram {
+    mask-image: url("../img/sprite.svg#telegram");
+  }
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

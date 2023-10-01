@@ -1,0 +1,35 @@
+@import "../common/variables.less";
+
+.academy-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22px;
+  text-decoration: none;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+  }
+
+  &:hover .academy-logo__image {
+    color: #46c1ae;
+  }
+
+  &:active .academy-logo__image {
+    opacity: 0.3;
+  }
+}
+
+.academy-logo__text {
+  font-size: 19px;
+  line-height: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  color: @text-primary;
+}
+
+.academy-logo__image {
+  width: 27px;
+  height: 34px;
+  color: @color-accent;
+}
