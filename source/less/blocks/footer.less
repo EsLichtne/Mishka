@@ -10,7 +10,7 @@
 
 .footer__wrapper {
   display: grid;
-  padding: 25px 0 23px;
+  padding: 27px 0 23px;
 
   @media (min-width: @tablet) {
     grid-template-columns: repeat(3, 1fr);
@@ -27,14 +27,21 @@
 .footer__social {
   width: 142px;
   margin: 0 auto;
+  padding-bottom: 31px;
+
+  @media (min-width: @tablet) {
+    padding: 0;
+  }
 }
 
 .footer__copyright {
-  width: 184px;
+  width: 182px;
   margin: 0 auto;
+  padding-top: 22px;
 
   @media (min-width: @tablet) {
     justify-self: end;
     margin: 0;
+    padding: 0;
   }
 }

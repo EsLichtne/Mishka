@@ -2,50 +2,49 @@
 @import "../common/mixins.less";
 
 .about {
-  padding: 31px 0 29px;
+  padding: min(3.1rem) 0 min(1.6rem);
   background-color: @color-primary;
 
   @media (min-width: @tablet) {
-    padding: 55px 0 83px;
+    padding: min(5.5rem) 0 min(8.3rem);
   }
 
   @media (min-width: @desktop) {
-    padding: 68px 0 90px;
+    padding: min(6.8rem) 0 min(9rem);
   }
 }
 
 .about__wrapper {
   @media (min-width: @desktop) {
-    padding: 0 174px;
+    padding: 0 min(17.4rem);
   }
 }
 
 .about__title {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: min(2.8rem);
 
   @media (min-width: @tablet) {
-    margin-bottom: 41px;
+    margin-bottom: min(4.1rem);
   }
 
   @media (min-width: @desktop) {
-    margin-bottom: 39px;
+    margin-bottom: min(3.9rem);
   }
 }
 
 .about__list {
   .list-reset();
   display: grid;
-  row-gap: 30px;
 
   @media (min-width: @tablet) {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 58px;
-    column-gap: 70px;
+    row-gap: min(5.8rem);
+    column-gap: min(7rem);
   }
 
   @media (min-width: @desktop) {
-    column-gap: 85px;
+    column-gap: min(8.5rem);
   }
 }
 
@@ -57,14 +56,17 @@
   }
 
   &--ecological {
+    margin-bottom: min(2.9rem);
+
     &::before {
-      width: 33px;
-      height: 38px;
-      margin-bottom: 16px;
+      width: min(3.3rem);
+      height: min(3.8rem);
+      margin-bottom: min(1.7rem);
+      margin-left: min(0.8rem);
       background-image: url("../img/sprite.svg#ecological");
 
       @media (min-width: @tablet) {
-        margin-bottom: 18px;
+        margin-bottom: min(1.8rem);
       }
     }
 
@@ -74,14 +76,16 @@
   }
 
   &--cheap {
+    margin-bottom: min(3.4rem);
+
     &::before {
-      width: 47px;
-      height: 27px;
-      margin-bottom: 26px;
+      width: min(4.7rem);
+      height: min(2.7rem);
+      margin-bottom: min(2.7rem);
       background-image: url("../img/sprite.svg#cheap");
 
       @media (min-width: @tablet) {
-        margin-bottom: 26px;
+        margin-bottom: min(2.6rem);
       }
     }
 
@@ -91,14 +95,17 @@
   }
 
   &--likes {
+    margin-bottom: min(3.1rem);
+
     &::before {
-      width: 34px;
-      height: 27px;
-      margin-bottom: 21px;
+      width: min(3.4rem);
+      height: min(2.7rem);
+      margin-bottom: min(2.2rem);
+      margin-left: min(0.7rem);
       background-image: url("../img/sprite.svg#likes");
 
       @media (min-width: @tablet) {
-        margin-bottom: 21px;
+        margin-bottom: min(2.1rem);
       }
     }
 
@@ -108,18 +115,21 @@
   }
 
   &--lovingly {
+    margin-bottom: min(3.2rem);
+
     &::before {
-      width: 35px;
-      height: 35px;
-      margin-bottom: 17px;
+      width: min(3.5rem);
+      height: min(3.5rem);
+      margin-bottom: min(1.7rem);
+      margin-left: min(0.3rem);
       background-image: url("../img/sprite.svg#lovingly");
 
       @media (min-width: @tablet) {
-        margin-bottom: 19px;
+        margin-bottom: min(1.9rem);
       }
 
       @media (min-width: @desktop) {
-        margin-bottom: 18px;
+        margin-bottom: min(1.8rem);
       }
     }
 
@@ -129,14 +139,17 @@
   }
 
   &--support {
+    margin-bottom: min(3.1rem);
+
     &::before {
-      width: 55px;
-      height: 23px;
-      margin-bottom: 26px;
+      width: min(5.5rem);
+      height: min(2.3rem);
+      margin-bottom: min(2.7rem);
+      margin-left: min(-0.6rem);
       background-image: url("../img/sprite.svg#support");
 
       @media (min-width: @tablet) {
-        margin-bottom: 28px;
+        margin-bottom: min(2.8rem);
       }
     }
 
@@ -146,14 +159,17 @@
   }
 
   &--gift {
+    margin-bottom: min(1.2rem);
+
     &::before {
-      width: 33px;
-      height: 32px;
-      margin-bottom: 20px;
+      width: min(3.3rem);
+      height: min(3.2rem);
+      margin-bottom: min(2.1rem);
+      margin-left: min(0.3rem);
       background-image: url("../img/sprite.svg#gift");
 
       @media (min-width: @tablet) {
-        margin-bottom: 21px;
+        margin-bottom: min(2.1rem);
       }
     }
 
@@ -164,12 +180,13 @@
 }
 
 .about__text {
-  font-size: 17px;
-  line-height: 20px;
+  margin: 0;
+  font-size: min(1.7rem);
+  line-height: min(2rem);
   font-weight: 700;
 
   @media (min-width: @tablet) {
-    font-size: 20px;
-    line-height: 22px;
+    font-size: min(2rem);
+    line-height: min(2.2rem);
   }
 }

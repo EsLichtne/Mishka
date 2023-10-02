@@ -52,7 +52,7 @@
 
 .contacts__title {
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 
   @media (min-width: @tablet) {
     margin-bottom: 49px;
@@ -66,8 +66,8 @@
 .contacts__list {
   .list-reset();
   display: grid;
-  row-gap: 37px;
-  margin-bottom: 62px;
+  row-gap: 33px;
+  margin-bottom: 61px;
 
   @media (min-width: @tablet) and (max-width: 1023px) {
     grid-template-columns: 309px auto;
@@ -84,7 +84,7 @@
   display: grid;
   grid-template-columns: 76px auto;
   font-size: 14px;
-  line-height: 30px;
+  line-height: 25px;
   font-style: normal;
   color: @text-secondary;
 
@@ -112,6 +112,10 @@
   &:active {
     border-color: rgba(70, 193, 174, 0.1);
   }
+}
+
+.contacts__location {
+  line-height: 30px;
 }
 
 .contacts__map {
