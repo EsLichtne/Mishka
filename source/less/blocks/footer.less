@@ -2,6 +2,7 @@
 
 .footer {
   background-color: @color-secondary;
+  padding: 27px 0 23px;
 
   @media (min-width: @tablet) {
     padding: 51px 0 58px;
@@ -10,17 +11,22 @@
 
 .footer__wrapper {
   display: grid;
-  padding: 27px 0 23px;
 
   @media (min-width: @tablet) {
     grid-template-columns: repeat(3, 1fr);
-    align-items: center;
+    align-items: start;
+    grid-auto-flow: dense;
+    row-gap: 10px;
   }
 }
 
 .footer__logo {
   @media (max-width: @mobile) {
     display: none;
+  }
+
+  @media (min-width: @tablet) {
+    grid-column: 1 / 2;
   }
 }
 
@@ -30,7 +36,11 @@
   padding-bottom: 31px;
 
   @media (min-width: @tablet) {
+    grid-column: 2 / 3;
+    justify-self: start;
+    margin: 0;
     padding: 0;
+    padding-top: 6px;
   }
 }
 
@@ -40,6 +50,7 @@
   padding-top: 22px;
 
   @media (min-width: @tablet) {
+    grid-column: 3 / 4;
     justify-self: end;
     margin: 0;
     padding: 0;
