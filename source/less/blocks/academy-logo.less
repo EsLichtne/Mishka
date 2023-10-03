@@ -16,15 +16,35 @@
 }
 
 .academy-logo__text {
-  font-size: 19px;
-  line-height: 18px;
+  font-size: min(1.9rem, 28px);
+  line-height: min(1.8rem, 27px);
   font-weight: 700;
   text-decoration: none;
   color: @text-primary;
+
+  @media (min-width: @tablet) {
+    font-size: min(1.9rem);
+    line-height: min(1.8rem);
+  }
+
+  @media (min-width: @desktop) {
+    font-size: min(1.9rem, 32px);
+    line-height: min(1.8rem, 30px);
+  }
 }
 
 .academy-logo__image {
-  width: 27px;
-  height: 34px;
+  width: min(2.7rem, 40px);
+  height: min(3.4rem, 51px);
   color: @color-accent;
+
+  @media (min-width: @tablet) {
+    width: min(2.7rem);
+    height: min(3.4rem);
+  }
+
+  @media (min-width: @desktop) {
+    width: min(2.7rem, 45px);
+    height: min(3.4rem, 57px);
+  }
 }

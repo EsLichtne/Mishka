@@ -1,26 +1,24 @@
 @import "../common/variables.less";
 @import "../common/mixins.less";
 
-.social {
-  border-bottom: 1px solid #e5e5e5;
-
-  @media (min-width: @tablet) {
-    border: none;
-  }
-}
-
 .social__list {
   .list-reset();
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  column-gap: 29px;
-  row-gap: 10px;
+  column-gap: min(2.9rem, 43px);
+  row-gap: min(1rem, 15px);
+
+  @media (min-width: @desktop) {
+    column-gap: min(2.9rem, 48px);
+    row-gap: min(1rem, 17px);
+  }
 }
 
 .social__link {
   display: block;
-  width: 28px;
-  height: 22px;
+  width: min(2.8rem, 42px);
+  height: min(2.2rem, 33px);
   background-color: #231f20;
   background-repeat: no-repeat;
   background-position: center;
@@ -35,6 +33,11 @@
 
   &--telegram {
     mask-image: url("../img/sprite.svg#telegram");
+  }
+
+  @media (min-width: @desktop) {
+    width: min(2.8rem, 47px);
+    height: min(2.2rem, 37px);
   }
 
   &:hover {

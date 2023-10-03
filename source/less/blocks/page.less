@@ -17,27 +17,36 @@
   position: relative;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  max-width: 2080px;
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   background-color: @color-primary;
   color: @text-primary;
 }
 
 .page__header {
-  min-height: 79px;
+  min-height: min(7.9rem, 118px);
 }
 
 .page__hero {
   @media (min-width: @tablet) {
-    margin-top: -65px;
+    margin-top: max(-6.5rem, -83px);
+  }
+
+  @media (min-width: @desktop) {
+    margin-top: max(-6.5rem, -108px);
   }
 }
 
 .page__modal {
   max-width: 100%;
-  width: 320px;
+  width: min(32rem, 480px);
 
   @media (min-width: @tablet) {
-    width: 566px;
+    width: min(56.6rem, 722px);
+  }
+
+  @media (min-width: @desktop) {
+    width: min(56.6rem, 945px);
   }
 }

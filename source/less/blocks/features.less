@@ -1,24 +1,25 @@
 @import "../common/variables.less";
 
 .features {
-  font-size: 15px;
-  line-height: 20px;
+  font-size: min(1.5rem, 22px);
+  line-height: min(2rem, 30px);
   color: @text-secondary;
 
-  @media (min-width: @tablet) {
-    font-size: 15px;
-    line-height: 20px;
+  @media (min-width: @desktop) {
+    font-size: min(1.5rem, 25px);
+    line-height: min(2rem, 33px);
   }
 }
 
 .features__wrapper {
   display: grid;
-  grid-template-columns: 97px auto;
-  padding: 6px 0 13px;
+  grid-template-columns: min(9.7rem, 145px) auto;
+  padding: min(0.6rem, 9px) 0 min(1.3rem, 19px);
   border-bottom: 1px solid #ececec;
 
   @media (min-width: @desktop) {
-    grid-template-columns: 98px auto;
+    grid-template-columns: min(9.8rem, 163px) auto;
+    padding: min(0.6rem, 10px) 0 min(1.3rem, 22px);
   }
 }
 

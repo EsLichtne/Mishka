@@ -1,53 +1,53 @@
 @import "../common/variables.less";
 
 .popular {
-  padding: 31px 0 42px;
+  padding: min(3.1rem, 46px) 0 min(4.2rem, 63px);
   background-color: @color-primary;
 
   @media (min-width: @tablet) {
-    padding: 40px 0 69px;
+    padding: min(4rem, 51px) 0 min(6.9rem, 88px);
   }
 
   @media (min-width: @desktop) {
-    padding: 54px 0 96px;
+    padding: min(5.4rem, 90px) 0 min(9.6rem, 160px);
   }
 }
 
 .popular__wrapper {
   @media (min-width: @tablet) {
     display: grid;
-    grid-template-columns: 292px 158px 218px;
+    grid-template-columns: min(29.2rem, 372px) min(15.8rem, 201px) min(21.8rem, 278px);
     grid-auto-flow: dense;
   }
 
   @media (min-width: @desktop) {
-    grid-template-columns: 174px 296px 250px 330px;
+    grid-template-columns: min(17.4rem, 290px) min(29.6rem, 494px) min(25.0rem, 417px) min(33.0rem, 551px);
     grid-template-rows: repeat(6, auto);
   }
 }
 
 .popular__product {
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: min(0.4rem, 6px);
 
   @media (min-width: @tablet) {
     grid-column: 1 / 3;
-    margin-bottom: 37px;
+    margin-bottom: min(3.7rem, 47px);
   }
 
   @media (min-width: @desktop) {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
-    margin-bottom: 36px;
+    margin-bottom: min(3.6rem, 60px);
     z-index: 1;
   }
 }
 
 .popular__title {
   margin: 0;
-  margin-bottom: 17px;
-  font-size: 17px;
-  line-height: 20px;
+  margin-bottom: min(1.7rem, 25px);
+  font-size: min(1.7rem, 25px);
+  line-height: min(2rem, 30px);
   font-weight: 700;
   text-transform: uppercase;
   color: @color-accent;
@@ -55,12 +55,12 @@
   @media (min-width: @tablet) {
     grid-column: 3 / -1;
     justify-self: end;
-    max-width: 100px;
+    max-width: min(10rem, 128px);
     margin: 0;
-    padding-top: 6px;
-    padding-right: 26px;
-    font-size: 17px;
-    line-height: 17px;
+    padding-top: min(0.6rem, 8px);
+    padding-right: min(2.6rem, 33px);
+    font-size: min(1.7rem, 22px);
+    line-height: min(1.7rem, 22px);
     text-align: center;
   }
 
@@ -68,97 +68,105 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     justify-self: center;
-    padding-top: 7px;
-    padding-right: 10px;
+    padding-top: min(0.7rem, 12px);
+    padding-right: min(1rem, 17px);
+    max-width: min(10rem, 167px);
+    font-size: min(1.7rem, 28px);
+    line-height: min(1.7rem, 28px);
   }
 }
 
 .popular__description {
   margin: 0;
-  margin-bottom: 22px;
-  font-size: 15px;
-  line-height: 24px;
+  margin-bottom: min(2.2rem, 33px);
+  font-size: min(1.5rem, 22px);
+  line-height: min(2.4rem, 36px);
   color: @text-secondary;
 
   @media (min-width: @tablet) {
     grid-column: 1 / 2;
-    margin-bottom: 42px;
-    font-size: 17px;
-    line-height: 30px;
+    margin-bottom: min(4.2rem, 53px);
+    font-size: min(1.7rem, 22px);
+    line-height: min(3rem, 38px);
   }
 
   @media (min-width: @desktop) {
     grid-column: 2 / 3;
     grid-row: 3 / 4;
-    margin-bottom: 53px;
+    margin-bottom: min(5.3rem, 88px);
+    font-size: min(1.7rem, 28px);
+    line-height: min(3rem, 50px);
   }
 }
 
 .popular__list {
   margin: 0;
-  margin-bottom: 27px;
+  margin-bottom: min(2.7rem, 40px);
   padding: 0;
 
   @media (min-width: @tablet) {
     grid-column: 1 / 2;
-    margin-bottom: 57px;
+    margin-bottom: min(5.7rem, 72px);
   }
 
   @media (min-width: @desktop) {
     grid-column: 2 / 3;
     grid-row: 4 / 5;
-    margin-bottom: 111px;
+    margin-bottom: min(11.1rem, 185px);
   }
 }
 
 .popular__image-wrapper {
   width: 100%;
-  height: 315px;
-  margin-bottom: 26px;
+  height: min(31.5rem, 473px);
+  margin-bottom: min(2.6rem, 39px);
 
   @media (min-width: @tablet) {
     grid-column: 2 / -1;
     grid-row: span 4;
     align-self: end;
     justify-self: end;
-    width: 334px;
-    height: 404px;
+    width: min(33.4rem, 426px);
+    height: min(40.4rem, 515px);
     margin: 0;
   }
 
   @media (min-width: @desktop) {
     grid-column: 3 / -1;
     grid-row: 1 / -1;
-    width: 525px;
-    height: 636px;
+    width: min(52.5rem, 876px);
+    height: min(63.6rem, 1061px);
   }
 }
 
 .popular__image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
 }
 
 .popular__price {
   margin: 0;
-  margin-bottom: 24px;
-  font-size: 17px;
-  line-height: 24px;
+  margin-bottom: min(2.4rem, 36px);
+  font-size: min(1.7rem, 25px);
+  line-height: min(2.4rem, 36px);
   font-weight: 700;
   text-align: center;
   color: @text-secondary;
 
   @media (min-width: @tablet) {
     grid-column: 1 / 2;
-    margin-bottom: 32px;
-    font-size: 20px;
-    line-height: 24px;
+    margin-bottom: min(3.2rem, 40px);
+    font-size: min(2rem, 25px);
+    line-height: min(2.4rem, 31px);
   }
 
   @media (min-width: @desktop) {
     grid-column: 2 / 3;
     grid-row: 5 / 6;
+    margin-bottom: min(3.2rem, 53px);
+    font-size: min(2rem, 33px);
+    line-height: min(2.4rem, 40px);
   }
 }
 
@@ -167,11 +175,12 @@
 
   @media (min-width: @tablet) {
     grid-column: 1 / 2;
-    max-width: 292px;
+    max-width: min(29.2rem, 372px);
   }
 
   @media (min-width: @desktop) {
     grid-column: 2 / 3;
     grid-row: 6 / 7;
+    max-width: min(29.2rem, 487px);
   }
 }

@@ -2,43 +2,60 @@
 @import "../common/mixins.less";
 
 .basket-adder {
-  padding: 28px 0 46px;
+  padding: min(2.8rem, 42px) 0 min(4.6rem, 69px);
   text-align: center;
   background-color: @color-primary;
 
   @media (min-width: @tablet) {
-    padding-top: 37px;
+    padding: min(3.7rem, 47px) 0 min(4.6rem, 59px);
+  }
+
+  @media (min-width: @desktop) {
+    padding: min(3.7rem, 62px) 0 min(4.6rem, 77px);
   }
 }
 
 .basket-adder__title {
-  max-width: 176px;
+  max-width: min(17.6rem, 264px);
   margin: 0 auto;
-  margin-bottom: 14px;
-  font-size: 25px;
-  line-height: 30px;
+  margin-bottom: min(1.4rem, 21px);
+  font-size: min(2.5rem, 37px);
+  line-height: min(3rem, 45px);
   font-weight: 700;
   text-transform: uppercase;
 
   @media (min-width: @tablet) {
-    max-width: 381px;
-    margin-bottom: 11px;
-    font-size: 30px;
-    line-height: 57px;
+    max-width: min(38.1rem, 486px);
+    margin-bottom: min(1.1rem, 14px);
+    font-size: min(3rem, 38px);
+    line-height: min(5.7rem, 72px);
+  }
+
+  @media (min-width: @desktop) {
+    max-width: min(38.1rem, 636px);
+    margin-bottom: min(1.1rem, 18px);
+    font-size: min(3rem, 50px);
+    line-height: min(5.7rem, 95px);
   }
 }
 
 .basket-adder__text {
   margin: 0;
-  margin-bottom: 21px;
-  font-size: 15px;
-  line-height: 30px;
+  margin-bottom: min(2.1rem, 31px);
+  font-size: min(1.5rem, 22px);
+  line-height: min(3rem, 45px);
   color: @text-secondary;
 
   @media (min-width: @tablet) {
-    margin-bottom: 19px;
-    font-size: 17px;
-    line-height: 30px;
+    margin-bottom: min(1.9rem, 24px);
+    font-size: min(1.7rem, 21px);
+    line-height: min(3rem, 38px);
+  }
+
+  @media (min-width: @tablet) {
+    margin-bottom: min(1.9rem, 31px);
+    font-size: min(1.7rem, 28px);
+    line-height: min(3rem, 50px);
   }
 }
 
@@ -54,8 +71,18 @@
 .basket-adder__list {
   .list-reset();
   display: flex;
-  gap: 7px;
-  margin-bottom: 31px;
+  gap: min(0.7rem, 10px);
+  margin-bottom: min(3.1rem, 46px);
+
+  @media (min-width: @tablet) {
+    gap: min(0.7rem, 9px);
+    margin-bottom: min(3.1rem, 40px);
+  }
+
+  @media (min-width: @desktop) {
+    gap: min(0.7rem, 12px);
+    margin-bottom: min(3.1rem, 52px);
+  }
 }
 
 .basket-adder__item {
@@ -64,15 +91,21 @@
 
 .basket-adder__label {
   display: block;
-  padding: 18px 0;
-  font-size: 17px;
-  line-height: 16px;
+  padding: min(1.8rem, 27px) 0;
+  font-size: min(1.7rem, 25px);
+  line-height: min(1.6rem, 24px);
   text-transform: uppercase;
   font-weight: 700;
   color: @text-secondary;
   background-color: @color-primary;
   border: 2px solid rgba(68, 68, 68, 0.1);
   cursor: pointer;
+
+  @media (min-width: @desktop) {
+    padding: min(1.8rem, 30px) 0;
+    font-size: min(1.7rem, 28px);
+    line-height: min(1.6rem, 27px);
+  }
 
   &:hover {
     border-color: rgba(68, 68, 68, 0.3);

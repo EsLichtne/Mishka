@@ -1,9 +1,14 @@
 @import "../common/variables.less";
 
 .footer-logo {
-  width: 102px;
-  height: 34px;
+  width: min(10.2rem, 130px);
+  height: min(3.4rem, 43px);
   color: @text-primary;
+
+  @media (min-width: @desktop) {
+    width: min(10.2rem, 170px);
+    height: min(3.4rem, 57px);
+  }
 
   &:hover {
     color: #46c1ae;
@@ -12,4 +17,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.footer-logo__image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }

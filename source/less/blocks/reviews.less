@@ -1,66 +1,72 @@
 @import "../common/variables.less";
 
 .reviews {
-  padding: 29px 0 51px;
+  padding: min(2.9rem, 43px) 0 min(5.1rem, 76px);
 
   @media (min-width: @tablet) {
-    padding: 79px 0 132px;
+    padding: min(7.9rem, 101px) 0 min(13.2rem, 168px);
     background-image: url("../img/napkin.jpg");
     background-repeat: no-repeat;
     background-position: top left;
-    background-size: 350px 457px;
+    background-size: min(35rem, 447px) min(45.7rem, 583px);
   }
 
   @media (min-width: @desktop) {
-    padding: 79px 0 184px;
+    padding: min(7.9rem, 132px) 0 min(18.4rem, 307px);
     background-position: top left 50px;
+    background-size: min(35rem, 584px) min(45.7rem, 763px);
   }
 }
 
 .reviews__wrapper {
   @media (min-width: @tablet) {
     display: grid;
-    grid-template-columns: auto 175px;
+    grid-template-columns: auto min(17.5rem, 223px);
     grid-auto-flow: dense;
     align-items: start;
   }
 
   @media (min-width: @desktop) {
-    padding-left: 174px;
+    grid-template-columns: auto min(17.5rem, 292px);
+    padding-left: min(17.4rem, 290px);
   }
 }
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 14px;
+  margin-bottom: min(1.4rem, 21px);
 
   @media (min-width: @tablet) {
     grid-column: 1 / 2;
-    margin-top: 4px;
-    margin-bottom: 39px;
+    margin-top: min(0.4rem, 5px);
+    margin-bottom: min(3.9rem, 50px);
   }
 
   @media (min-width: @desktop) {
     margin-top: 0;
-    margin-bottom: 35px;
+    margin-bottom: min(3.5rem, 58px);
   }
 }
 
 .reviews__slider {
-  margin-bottom: 38px;
+  margin-bottom: min(3.8rem, 57px);
 
   @media (min-width: @tablet) {
     position: relative;
     grid-column: 1 / -1;
     margin-bottom: 0;
     display: grid;
-    grid-template-columns: auto 175px;
+    grid-template-columns: auto min(17.5rem, 223px);
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: auto min(17.5rem, 292px);
   }
 }
 
 .reviews__feedback {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: min(3.2rem, 48px);
 
   @media (min-width: @tablet) {
     grid-column: 1 / -1;
@@ -73,7 +79,11 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 175px;
+    width: min(17.5rem, 223px);
+  }
+
+  @media (min-width: @desktop) {
+    width: min(17.5rem, 292px);
   }
 }
 

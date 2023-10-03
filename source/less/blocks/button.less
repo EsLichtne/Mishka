@@ -9,16 +9,22 @@
   cursor: pointer;
 
   &--primary {
-    padding: 14px;
-    font-size: 18px;
-    line-height: 20px;
+    padding: min(1.4rem, 21px);
+    font-size: min(1.8rem, 27px);
+    line-height: min(2rem, 30px);
     color: @text-secondary;
     background-color: @color-primary;
     border: 2px solid @text-secondary;
 
     @media (min-width: @tablet) {
-      font-size: 17px;
-      line-height: 20px;
+      font-size: min(1.7rem, 21px);
+      line-height: min(2rem, 25px);
+    }
+
+    @media (min-width: @desktop) {
+      padding: min(1.4rem, 23px);
+      font-size: min(1.7rem, 28px);
+      line-height: min(2rem, 33px);
     }
 
     &:hover {
@@ -32,12 +38,18 @@
   }
 
   &--secondary {
-    padding: 18px;
-    font-size: 17px;
-    line-height: 16px;
+    padding: min(1.8rem, 27px);
+    font-size: min(1.7rem, 25px);
+    line-height: min(1.6rem, 24px);
     color: @color-primary;
     background-color: @color-accent;
     border: none;
+
+    @media (min-width: @tablet) {
+      padding: min(1.8rem, 30px);
+      font-size: min(1.7rem, 28px);
+      line-height: min(1.6rem, 27px);
+    }
 
     &:hover {
       background-color: #46c1ae;

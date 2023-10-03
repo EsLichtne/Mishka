@@ -2,10 +2,14 @@
 
 .footer {
   background-color: @color-secondary;
-  padding: 27px 0 23px;
+  padding: min(2.7rem, 40px) 0 min(2.3rem, 34px);
 
   @media (min-width: @tablet) {
-    padding: 51px 0 58px;
+    padding: min(5.1rem, 65px) 0 min(5.8rem, 74px);
+  }
+
+  @media (min-width: @desktop) {
+    padding: min(5.1rem, 85px) 0 min(5.8rem, 97px);
   }
 }
 
@@ -16,7 +20,11 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
     grid-auto-flow: dense;
-    row-gap: 10px;
+    row-gap: min(1rem, 13px);
+  }
+
+  @media (min-width: @desktop) {
+    row-gap: min(1rem, 17px);
   }
 }
 
@@ -31,32 +39,39 @@
 }
 
 .footer__social {
-  width: 142px;
-  margin: 0 auto;
-  padding-bottom: 31px;
+  width: 100%;
+  padding-bottom: min(3.1rem, 46px);
+  border-bottom: 1px solid #e5e5e5;
 
   @media (min-width: @tablet) {
     grid-column: 2 / 3;
     justify-self: start;
+    width: min(14.2rem, 213px);
     margin: 0;
     padding: 0;
-    padding-top: 6px;
+    padding-top: min(0.6rem, 8px);
+    border: none;
   }
 
   @media (min-width: @desktop) {
-    margin-left: 64px;
+    width: min(14.2rem, 237px);
+    margin-left: min(6.4rem, 107px);
   }
 }
 
 .footer__copyright {
-  width: 182px;
+  width: min(18.2rem, 273px);
   margin: 0 auto;
-  padding-top: 22px;
+  padding-top: min(2.2rem, 33px);
 
   @media (min-width: @tablet) {
     grid-column: 3 / 4;
     justify-self: end;
     margin: 0;
     padding: 0;
+  }
+
+  @media (min-width: @desktop) {
+    width: min(18.2rem, 304px);
   }
 }

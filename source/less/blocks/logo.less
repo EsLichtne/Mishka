@@ -1,17 +1,17 @@
 @import "../common/variables.less";
 
 .logo {
-  width: 86px;
-  height: 35px;
+  width: min(8.6rem, 129px);
+  height: min(3.5rem, 52px);
 
   @media (min-width: @tablet) {
-    width: 113px;
-    height: 46px;
+    width: min(11.3rem, 144px);
+    height: min(4.6rem, 59px);
   }
 
   @media (min-width: @desktop) {
-    width: 149px;
-    height: 72px;
+    width: min(14.9rem, 249px);
+    height: min(7.2rem, 120px);
   }
 
   &:hover {
@@ -24,16 +24,7 @@
 }
 
 .logo__image {
-  width: 86px;
-  height: 35px;
-
-  @media (min-width: @tablet) {
-    width: 113px;
-    height: 46px;
-  }
-
-  @media (min-width: @desktop) {
-    width: 149px;
-    height: 72px;
-  }
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
