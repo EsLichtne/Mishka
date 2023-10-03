@@ -1,1 +1,20 @@
 @import "../common/variables";
+@import "../common/mixins.less";
+
+.cards {
+  .list-reset();
+  display: grid;
+  gap: min(3rem);
+  padding: min(3rem) 0;
+
+  @media (min-width: @tablet) {
+    gap: min(5.4rem);
+    padding: min(5.3rem) 0;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: repeat(auto-fill, 31.6rem);
+    gap: min(5.1rem);
+    padding: min(5.7rem) 0;
+  }
+}

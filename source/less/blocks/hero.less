@@ -6,23 +6,6 @@
   display: grid;
   grid-template-rows: repeat(3, auto);
   background-color: #f9f9f9;
-
-  &::after {
-    @media (min-width: @tablet) {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      width: 100%;
-      height: max(2.4rem, 24px);
-      background-image: url("../img/sprite.svg#wave-tablet");
-      background-repeat: no-repeat;
-    }
-
-    @media (min-width: @desktop) {
-      height: clamp(34px, 3.4rem, 57px);
-      background-image: url("../img/sprite.svg#wave-desktop");
-    }
-  }
 }
 
 .hero__title {

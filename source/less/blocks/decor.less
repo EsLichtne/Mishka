@@ -1,28 +1,51 @@
 @import "../common/variables.less";
 
 .decor {
-  position: relative;
+  &--primary {
+    position: relative;
 
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: min(0.6rem);
-    background-image: url("../img/sprite.svg#zigzag");
-    background-repeat: no-repeat;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: min(0.6rem);
+      background-image: url("../img/sprite.svg#zigzag");
+      background-repeat: no-repeat;
 
-    @media (min-width: @tablet) {
-      height: max(1.7rem, 17px);
-      background-image: url("../img/sprite.svg#zigzag-tablet");
+      @media (min-width: @tablet) {
+        height: max(1.7rem, 17px);
+        background-image: url("../img/sprite.svg#zigzag-tablet");
+      }
+
+      @media (min-width: @desktop) {
+        width: calc(100% - 100px);
+        height: clamp(23px, 2.3rem, 38px);
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("../img/sprite.svg#zigzag-desktop");
+      }
     }
+  }
 
-    @media (min-width: @desktop) {
-      width: calc(100% - 100px);
-      height: clamp(23px, 2.3rem, 38px);
-      left: 50%;
-      transform: translateX(-50%);
-      background-image: url("../img/sprite.svg#zigzag-desktop");
+  &--secondary {
+    position: relative;
+
+    &::after {
+      @media (min-width: @tablet) {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 100%;
+        height: max(2.4rem, 24px);
+        background-image: url("../img/sprite.svg#wave-tablet");
+        background-repeat: no-repeat;
+      }
+
+      @media (min-width: @desktop) {
+        height: clamp(34px, 3.4rem, 57px);
+        background-image: url("../img/sprite.svg#wave-desktop");
+      }
     }
   }
 }

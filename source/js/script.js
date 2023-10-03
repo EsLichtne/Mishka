@@ -13,13 +13,15 @@ navButton.addEventListener("click", function () {
   }
 })
 
-let modalOpenButton = document.querySelector(".button--modal");
+let modalOpenButton = document.querySelectorAll(".button--modal");
 let modalCloseButton = document.querySelector(".modal__button");
 let modal = document.querySelector(".modal");
 
-modalOpenButton.addEventListener("click", function () {
-  modal.showModal();
-})
+for (let i = 0; i <= modalOpenButton.length; i++) {
+  modalOpenButton[i].addEventListener("click", function () {
+    modal.showModal();
+  })
+}
 
 modalCloseButton.addEventListener("click", function (evt) {
   evt.preventDefault();
