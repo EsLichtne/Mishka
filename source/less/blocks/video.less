@@ -40,14 +40,19 @@
   cursor: pointer;
   transition: transform 0.5s;
 
+  @media (min-width: @tablet) {
+    width: min(10.2rem);
+    height: min(7.8rem);
+  }
+
   &::after {
     content: "";
     position: absolute;
     top: 50%;
     left: min(3.3rem);
     transform: translateY(-50%);
-    width: 30px;
-    height: 36px;
+    width: min(3rem);
+    height: min(3.6rem);
     background-image: url("../img/sprite.svg#play");
     background-repeat: no-repeat;
     background-position: center;
