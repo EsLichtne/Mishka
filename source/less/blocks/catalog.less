@@ -1,36 +1,40 @@
 @import "../common/variables";
 
 .catalog {
-  background-image: linear-gradient(180deg, @color-secondary 17.7rem, @color-primary 17.7rem);
+  background-image: linear-gradient(180deg, @color-secondary min(17.7rem, 265px), @color-primary min(17.7rem, 265px));
 
   @media (min-width: @tablet) {
     background-image: linear-gradient(180deg, @color-secondary 22.6rem, @color-primary 22.6rem);
   }
+
+  @media (min-width: @desktop) {
+    background-image: linear-gradient(180deg, @color-secondary min(25.5rem, 425px), @color-primary min(25.5rem, 425px));
+  }
 }
 
 .catalog__header {
-  padding: min(7.3rem) 0;
+  padding: min(7.3rem, 109px) 0;
 
   @media (min-width: @tablet) {
-    margin-bottom: min(1.4rem);
-    padding: min(10rem) 0 min(8.7rem);
+    margin-bottom: min(1.4rem, 18px);
+    padding: min(10rem, 128px) 0 min(8.7rem, 111px);
   }
 
   @media (min-width: @desktop) {
-    margin-bottom: min(5.4rem);
-    padding: min(10.1rem) 0 min(7.9rem);
+    margin-bottom: min(5.4rem, 90px);
+    padding: min(10.1rem, 169px) 0 min(11.4rem, 190px);
   }
 }
 
 .catalog__title {
-  max-width: min(23.7rem);
+  max-width: min(23.7rem, 355px);
   margin: 0 auto;
 
   @media (min-width: @tablet) {
-    max-width: min(40.2rem);
+    max-width: min(40.2rem, 513px);
   }
 
   @media (min-width: @desktop) {
-    max-width: min(48.6rem);
+    max-width: min(48.6rem, 811px);
   }
 }

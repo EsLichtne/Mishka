@@ -4,11 +4,11 @@
   display: grid;
 
   @media (min-width: @tablet) and (max-width: 1023px) {
-    grid-template-columns: min(33.4rem) 1fr;
+    grid-template-columns: min(33.4rem, 426px) 1fr;
   }
 
   @media (min-width: @desktop) {
-    grid-template-rows: min(46.2rem) auto;
+    grid-template-rows: min(46.2rem, 771px) auto;
   }
 }
 
@@ -16,13 +16,13 @@
   width: 100%;
 
   @media (min-width: @tablet) and (max-width: 1023px) {
-    width: min(33.4rem);
-    height: min(33.4rem);
+    width: min(33.4rem, 426px);
+    height: min(33.4rem, 426px);
   }
 
   @media (min-width: @desktop) {
-    width: min(31.6rem);
-    height: min(46.2rem);
+    width: min(31.6rem, 527px);
+    height: min(46.2rem, 771px);
   }
 }
 
@@ -34,75 +34,74 @@
 }
 
 .card__content {
-  padding: min(2.7rem) min(2.8rem) 0;
+  padding: min(2.7rem, 40px) min(2.8rem, 42px) 0;
   border: 1px solid #ececec;
 
   @media (min-width: @tablet) {
     display: grid;
     grid-template-rows: 1fr auto;
-    padding: min(2.7rem) min(3.3rem) 0;
+    padding: min(2.7rem, 34px) min(3.3rem, 42px) 0;
   }
 
   @media (min-width: @desktop) {
-    padding: min(2.7rem) min(2.8rem) 0;
+    padding: min(2.7rem, 45px) min(2.8rem, 47px) 0;
   }
 }
 
 .card__header {
   @media (min-width: @desktop) {
-    margin-bottom: min(1.2rem);
+    margin-bottom: min(1.2rem, 20px);
   }
 }
 
 .card__title-link {
   display: block;
-  margin-bottom: min(0.6rem);
+  margin-bottom: min(0.6rem, 9px);
   text-decoration: none;
 
   @media (min-width: @tablet) {
-    margin-bottom: min(0.6rem);
+    margin-bottom: min(0.6rem, 8px);
   }
 
   @media (min-width: @desktop) {
-    margin-bottom: min(0.6rem);
+    margin-bottom: min(0.6rem, 10px);
   }
 }
 
 .card__title {
   margin: 0;
-  font-size: min(1.7rem);
-  line-height: min(2.4rem);
+  font-size: min(1.7rem, 25px);
+  line-height: min(2.4rem, 36px);
   font-weight: 700;
   color: @text-primary;
 
   @media (min-width: @tablet) {
-    font-size: min(2rem);
-    line-height: min(2.4rem);
+    font-size: min(2rem, 25px);
+    line-height: min(2.4rem, 31px);
   }
 
   @media (min-width: @desktop) {
-    font-size: min(2rem);
-    line-height: min(2.4rem);
+    font-size: min(2rem, 33px);
+    line-height: min(2.4rem, 40px);
   }
 }
 
 .card__description {
   margin: 0;
-  margin-bottom: min(1.7rem);
-  font-size: min(1.3rem);
-  line-height: min(3rem);
+  margin-bottom: min(1.7rem, 25px);
+  font-size: min(1.3rem, 19px);
+  line-height: min(3rem, 45px);
   color: @text-secondary;
 
   @media (min-width: @tablet) {
     margin-bottom: 0;
-    font-size: min(1.5rem);
-    line-height: min(3rem);
+    font-size: min(1.5rem, 19px);
+    line-height: min(3rem, 38px);
   }
 
   @media (min-width: @desktop) {
-    width: min(23.9rem);
-    font-size: min(1.5rem);
-    line-height: min(3rem);
+    font-size: min(1.5rem, 25px);
+    line-height: min(3rem, 50px);
   }
 }
 
@@ -111,50 +110,50 @@
   justify-content: space-between;
   align-items: start;
   margin: 0;
-  padding: min(2.2rem) 0 min(2.6rem);
+  padding: min(2.2rem, 33px) 0 min(2.6rem, 39px);
   border-top: 1px solid #ececec;
 
   @media (min-width: @tablet) {
-    padding: min(2.3rem) 0 min(2.5rem);
+    padding: min(2.3rem, 29px) 0 min(2.5rem, 32px);
   }
 
   @media (min-width: @desktop) {
-    padding: min(2.3rem) 0 min(2.5rem);
+    padding: min(2.3rem, 38px) 0 min(2.5rem, 42px);
   }
 }
 
 .card__price {
-  font-size: min(1.5rem);
-  line-height: min(2.4rem);
+  font-size: min(1.5rem, 22px);
+  line-height: min(2.4rem, 36px);
   font-weight: 700;
 
   @media (min-width: @tablet) {
-    font-size: min(1.7rem);
-    line-height: min(2.4rem);
+    font-size: min(1.7rem, 22px);
+    line-height: min(2.4rem, 31px);
   }
 
   @media (min-width: @desktop) {
-    font-size: min(1.7rem);
-    line-height: min(2.4rem);
+    font-size: min(1.7rem, 28px);
+    line-height: min(2.4rem, 40px);
   }
 }
 
 .card__button {
-  width: min(2rem);
-  height: min(1.9rem);
+  width: min(2rem, 30px);
+  height: min(1.9rem, 28px);
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
 
   @media (min-width: @tablet) {
-    width: min(2rem);
-    height: min(1.8rem);
+    width: min(2rem, 25px);
+    height: min(1.8rem, 23px);
   }
 
   @media (min-width: @desktop) {
-    width: min(2rem);
-    height: min(1.8rem);
+    width: min(2rem, 33px);
+    height: min(1.8rem, 30px);
   }
 
   &:hover .card__button-icon {

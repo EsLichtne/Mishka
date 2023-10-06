@@ -4,17 +4,17 @@
 .cards {
   .list-reset();
   display: grid;
-  gap: min(3rem);
-  padding: min(3rem) 0;
+  gap: min(3rem, 45px);
+  padding: min(3rem, 45px) 0;
 
   @media (min-width: @tablet) {
-    gap: min(5.4rem);
-    padding: min(5.3rem) 0;
+    gap: min(5.4rem, 69px);
+    padding: min(5.3rem, 68px) 0;
   }
 
   @media (min-width: @desktop) {
-    grid-template-columns: repeat(auto-fill, 31.6rem);
-    gap: min(5.1rem);
-    padding: min(5.7rem) 0;
+    grid-template-columns: repeat(auto-fill, min(31.6rem, 527px));
+    gap: min(5.1rem, 85px);
+    padding: min(5.7rem, 95px) 0;
   }
 }
