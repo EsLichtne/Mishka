@@ -2,21 +2,21 @@
 
 .process__wrapper {
   display: grid;
-  grid-template-columns: min(3.4rem, 51px) auto min(3.4rem, 51px);
+  grid-template-columns: min(3.2rem, 51px) auto min(3.2rem, 51px);
   padding: min(2.1rem, 31px) 0 min(3.3rem, 49px);
   border: 1px solid #ececec;
 
   @media (min-width: @tablet) {
-    grid-template-columns: min(4.2rem, 53px) auto min(4.2rem, 53px);
+    grid-template-columns: min(4.1rem, 53px) auto min(4.1rem, 53px);
     padding: 0;
     padding-bottom: min(4.6rem, 59px);
   }
 
   @media (min-width: @desktop) {
-    grid-template-columns: min(68.3rem, 1140px) auto;
+    grid-template-columns: min(68.2rem, 1140px) auto;
     column-gap: min(7.9rem, 132px);
     padding: 0;
-    padding-right: min(5.7rem, 95px);
+    padding-right: min(5.6rem, 95px);
   }
 }
 
@@ -26,7 +26,7 @@
   align-items: center;
   gap: min(2.5rem, 37px);
   margin: 0;
-  margin-bottom: min(2.6rem, 39px);
+  margin-bottom: min(2.7rem, 39px);
   font-size: min(1.7rem, 25px);
   line-height: min(2.4rem, 36px);
   font-weight: 700;
@@ -51,7 +51,7 @@
   &::before {
     content: "";
     display: block;
-    width: min(3.2rem, 50px);
+    min-width: min(3.2rem, 50px);
     height: min(2.2rem, 33px);
     background-image: url("../img/sprite.svg#video");
     background-repeat: no-repeat;
@@ -69,7 +69,7 @@
   grid-column: 1 / -1;
   width: 100%;
   height: min(15rem, 225px);
-  margin-bottom: min(3.5rem, 52px);
+  margin-bottom: min(3.4rem, 52px);
 
   @media (min-width: @tablet) {
     order: -1;

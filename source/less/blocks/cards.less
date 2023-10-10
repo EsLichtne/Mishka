@@ -5,7 +5,7 @@
   .list-reset();
   display: grid;
   gap: min(3rem, 45px);
-  padding: min(3rem, 45px) 0;
+  padding: min(3.1rem, 45px) 0;
 
   @media (min-width: @tablet) {
     gap: min(5.4rem, 69px);
@@ -15,6 +15,7 @@
   @media (min-width: @desktop) {
     grid-template-columns: repeat(auto-fill, min(31.6rem, 527px));
     gap: min(5.1rem, 85px);
-    padding: min(5.7rem, 95px) 0;
+    justify-content: center;
+    padding: min(5.7rem, 95px) 0 min(5.6rem, 95px);
   }
 }
