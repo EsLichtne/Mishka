@@ -14,8 +14,9 @@
 }
 
 .popular__wrapper {
+  display: grid;
+
   @media (min-width: @tablet) {
-    display: grid;
     grid-template-columns: min(29.2rem, 372px) min(15.8rem, 201px) min(21.8rem, 278px);
     grid-auto-flow: dense;
   }
@@ -27,6 +28,7 @@
 }
 
 .popular__product {
+  order: -1;
   margin: 0;
   margin-bottom: min(0.4rem, 6px);
 
