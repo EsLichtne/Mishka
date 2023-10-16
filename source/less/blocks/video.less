@@ -7,12 +7,12 @@
 .video__link {
   display: block;
 
-  &:hover+.video__button {
+  &:hover .video__button {
     transform: scale(1.2) translate(-40%, -40%);
     transition: transform 0.5s;
   }
 
-  &:active+.video__button {
+  &:active + .video__button {
     transform: scale(0.8) translate(-60%, -60%);
     opacity: 0.6;
     transition: transform 0.5s;
