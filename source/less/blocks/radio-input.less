@@ -8,7 +8,12 @@
   height: 42px;
   border: 2px solid @text-secondary;
   border-radius: 50%;
-  background: @color-primary;
+  background-color: transparent;
+
+  @media (min-width: @tablet) {
+    width: 52px;
+    height: 52px;
+  }
 
   &:checked::after {
     content: "";
@@ -16,6 +21,11 @@
     height: 16px;
     border-radius: 50%;
     background-color: #62d1ba;
+
+    @media (min-width: @tablet) {
+      width: 20px;
+      height: 20px;
+    }
   }
 
   &:hover {

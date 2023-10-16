@@ -1,0 +1,15 @@
+@import "../common/variables.less";
+
+.background {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -50px;
+    width: calc(100% + 100px);
+    height: 100%;
+    background-color: @color-secondary;
+    z-index: -1;
+  }
+}

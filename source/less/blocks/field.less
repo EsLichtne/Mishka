@@ -1,0 +1,24 @@
+@import "../common/variables.less";
+
+.field {
+  font-family: @font-primary;
+  font-size: 17px;
+  line-height: 18px;
+  color: @text-primary;
+
+  @media (min-width: @tablet) {
+    font-size: 19px;
+    line-height: 18px;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: #62d1ba;
+    outline: none;
+  }
+}

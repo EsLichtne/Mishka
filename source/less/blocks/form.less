@@ -5,6 +5,10 @@
   padding: 73px 0 73px;
   text-align: center;
   background-color: @color-secondary;
+
+  @media (min-width: @tablet) {
+    padding: 100px 0 75px;
+  }
 }
 
 .form__title {
@@ -13,6 +17,10 @@
 
 .form__wrapper {
   padding: 17px 0 55px;
+
+  @media (min-width: @tablet) {
+    padding: 54px 0 50px;
+  }
 }
 
 .form__description {
@@ -22,6 +30,13 @@
   font-size: 13px;
   line-height: 24px;
   color: @text-secondary;
+
+  @media (min-width: @tablet) {
+    max-width: 100%;
+    margin-bottom: 63px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form__fieldset {
@@ -29,20 +44,49 @@
   padding: 0;
   border: none;
 
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: 167px auto;
+  }
+
   &--type {
-    margin-bottom: 31px;
+    @media (max-width: @mobile) {
+      margin-bottom: 31px;
+    }
+
+    @media (min-width: @tablet) {
+      padding-bottom: 50px;
+    }
   }
 
   &--color {
-    margin-bottom: 33px;
+    @media (max-width: @mobile) {
+      margin-bottom: 33px;
+    }
+
+    @media (min-width: @tablet) {
+      padding: 50px 0;
+    }
   }
 
   &--personal {
-    margin-bottom: 34px;
+    @media (max-width: @mobile) {
+      margin-bottom: 34px;
+    }
+
+    @media (min-width: @tablet) {
+      padding-top: 50px;
+    }
   }
 
   &--extra {
-    margin-bottom: 17px;
+    @media (max-width: @mobile) {
+      margin-bottom: 17px;
+    }
+
+    @media (min-width: @tablet) {
+      padding: 50px 0 53px;
+    }
   }
 }
 
@@ -55,17 +99,24 @@
   text-transform: uppercase;
   color: @color-accent;
 
+  @media (min-width: @tablet) {
+    margin: 0;
+    padding: 18px 0;
+  }
+
   &::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    max-width: 100%;
-    height: 1px;
-    background-color: #62d1ba;
-    z-index: -1;
+    @media (max-width: @mobile) {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      max-width: 100%;
+      height: 1px;
+      background-color: #62d1ba;
+      z-index: -1;
+    }
   }
 
   &--type {
@@ -78,6 +129,10 @@
 
   &--personal {
     margin-bottom: 29px;
+
+    @media (min-width: @tablet) {
+      padding: 0;
+    }
   }
 
   &--special {
@@ -90,8 +145,10 @@
 }
 
 .form__headline-text {
-  padding-right: 24px;
-  background-color: @color-primary;
+  @media (max-width: @mobile) {
+    padding-right: 24px;
+    background-color: @color-primary;
+  }
 }
 
 .form__list {
@@ -100,24 +157,50 @@
 
   &--type {
     gap: 12px;
+
+    @media (min-width: @tablet) {
+      gap: 24px;
+    }
   }
 
   &--color {
     gap: 23px;
+
+    @media (min-width: @tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 24px;
+    }
   }
 
   &--name {
     gap: 22px;
     margin-bottom: 34px;
+
+    @media (min-width: @tablet) {
+      gap: 24px;
+      margin-bottom: 50px;
+    }
   }
 
   &--personal {
     gap: 34px;
+
+    @media (min-width: @tablet) {
+      grid-column: 1 / -1;
+      gap: 24px;
+      padding: 50px 0;
+    }
   }
 }
 
 .form__item {
   display: grid;
+
+  &--personal {
+    @media (min-width: @tablet) {
+      grid-template-columns: 167px auto;
+    }
+  }
 }
 
 .form__control {
@@ -126,10 +209,18 @@
 
   &--type {
     gap: 19px;
+
+    @media (min-width: @tablet) {
+      gap: 26px;
+    }
   }
 
   &--color {
     gap: 23px;
+
+    @media (min-width: @tablet) {
+      gap: 30px;
+    }
   }
 }
 
@@ -142,6 +233,11 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
+
+  @media (min-width: @tablet) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .form__textarea {
@@ -151,11 +247,29 @@
   resize: vertical;
 }
 
+.form__footer {
+  @media (min-width: @tablet) {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 230px auto;
+    align-items: center;
+    text-align: right;
+  }
+}
+
 .form__footnote {
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
 }
 
 .form__button {
   width: 100%;
+
+  @media (min-width: @tablet) {
+    order: -1;
+  }
 }
