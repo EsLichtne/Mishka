@@ -1,1 +1,48 @@
 @import "../common/variables.less";
+
+.input {
+  padding: 17px 0;
+  font-family: @font-primary;
+  font-size: 17px;
+  line-height: 18px;
+  color: @text-secondary;
+  border: none;
+  border-bottom: 2px solid @text-primary;
+  background-color: @color-primary;
+
+  &--special {
+    padding: 14px 0 20px;
+    background-repeat: no-repeat;
+  }
+
+  &--phone {
+    background-image: url("../img/sprite.svg#phone");
+    background-size: 25px 24px;
+    background-position: center right;
+  }
+
+  &--email {
+    background-image: url("../img/sprite.svg#email");
+    background-size: 32px 21px;
+    background-position: center right;
+  }
+
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  &:hover,
+  &:active {
+    border-color: #62d1ba;
+  }
+
+  &--phone:hover,
+  &--phone:active {
+    background-image: url("../img/sprite.svg#phone-active");
+  }
+
+  &--email:hover,
+  &--email:active {
+    background-image: url("../img/sprite.svg#email-active");
+  }
+}

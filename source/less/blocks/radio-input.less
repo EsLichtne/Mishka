@@ -1,1 +1,28 @@
 @import "../common/variables.less";
+
+.radio-input {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  width: 42px;
+  height: 42px;
+  border: 2px solid @text-secondary;
+  border-radius: 50%;
+  background: @color-primary;
+
+  &:checked::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #62d1ba;
+  }
+
+  &:hover {
+    border-color: #62d1ba;
+  }
+
+  &:active {
+    border-color: rgba(0, 0, 0, 0.3);
+  }
+}
