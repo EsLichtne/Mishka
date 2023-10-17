@@ -14,6 +14,11 @@
     height: 52px;
   }
 
+  @media (min-width: @desktop) {
+    width: 52px;
+    height: 52px;
+  }
+
   &:checked::after {
     content: "";
     width: 24px;
@@ -21,6 +26,16 @@
     background-image: url("../img/sprite.svg#tick");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-width: @tablet) {
+      width: 31;
+      height: 22px;
+    }
+
+    @media (min-width: @desktop) {
+      width: 31;
+      height: 22px;
+    }
   }
 
   &:hover {

@@ -1,8 +1,9 @@
 @import "../common/variables.less";
 
 .decor {
+  position: relative;
+
   &--primary {
-    position: relative;
 
     &::after {
       content: "";
@@ -29,12 +30,11 @@
   }
 
   &--secondary {
-    position: relative;
-
     &::after {
       @media (min-width: @tablet) {
         content: "";
         position: absolute;
+        left: 0;
         bottom: -2px;
         width: 100%;
         height: max(2.4rem, 24px);

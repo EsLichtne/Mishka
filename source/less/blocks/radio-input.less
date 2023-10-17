@@ -15,6 +15,11 @@
     height: 52px;
   }
 
+  @media (min-width: @desktop) {
+    width: 52px;
+    height: 52px;
+  }
+
   &:checked::after {
     content: "";
     width: 16px;
@@ -23,6 +28,11 @@
     background-color: #62d1ba;
 
     @media (min-width: @tablet) {
+      width: 20px;
+      height: 20px;
+    }
+
+    @media (min-width: @desktop) {
       width: 20px;
       height: 20px;
     }

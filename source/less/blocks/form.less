@@ -9,6 +9,10 @@
   @media (min-width: @tablet) {
     padding: 100px 0 75px;
   }
+
+  @media (min-width: @desktop) {
+    padding: 101px 0 96px;
+  }
 }
 
 .form__title {
@@ -20,6 +24,10 @@
 
   @media (min-width: @tablet) {
     padding: 54px 0 50px;
+  }
+
+  @media (min-width: @desktop) {
+    padding: 98px 0 50px;
   }
 }
 
@@ -37,6 +45,13 @@
     font-size: 17px;
     line-height: 30px;
   }
+
+  @media (min-width: @desktop) {
+    width: 700px;
+    margin-bottom: 62px;
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .form__fieldset {
@@ -49,6 +64,10 @@
     grid-template-columns: 167px auto;
   }
 
+  @media (min-width: @desktop) {
+    grid-template-columns: 174px auto;
+  }
+
   &--type {
     @media (max-width: @mobile) {
       margin-bottom: 31px;
@@ -56,6 +75,10 @@
 
     @media (min-width: @tablet) {
       padding-bottom: 50px;
+    }
+
+    @media (min-width: @desktop) {
+      padding-bottom: 49px;
     }
   }
 
@@ -67,6 +90,10 @@
     @media (min-width: @tablet) {
       padding: 50px 0;
     }
+
+    @media (min-width: @desktop) {
+      padding: 48px 0 52px;
+    }
   }
 
   &--personal {
@@ -75,6 +102,10 @@
     }
 
     @media (min-width: @tablet) {
+      padding-top: 50px;
+    }
+
+    @media (min-width: @desktop) {
       padding-top: 50px;
     }
   }
@@ -86,6 +117,10 @@
 
     @media (min-width: @tablet) {
       padding: 50px 0 53px;
+    }
+
+    @media (min-width: @desktop) {
+      padding: 50px 0 49px;
     }
   }
 }
@@ -102,6 +137,12 @@
   @media (min-width: @tablet) {
     margin: 0;
     padding: 18px 0;
+  }
+
+  @media (min-width: @desktop) {
+    margin-left: 46px;
+    font-size: 17px;
+    line-height: 16px;
   }
 
   &::after {
@@ -161,6 +202,10 @@
     @media (min-width: @tablet) {
       gap: 24px;
     }
+
+    @media (min-width: @desktop) {
+      gap: 24px;
+    }
   }
 
   &--color {
@@ -168,6 +213,12 @@
 
     @media (min-width: @tablet) {
       grid-template-columns: repeat(2, 1fr);
+      column-gap: 0;
+      row-gap: 24px;
+    }
+
+    @media (min-width: @desktop) {
+      grid-template-columns: repeat(3, 1fr);
       row-gap: 24px;
     }
   }
@@ -177,6 +228,11 @@
     margin-bottom: 34px;
 
     @media (min-width: @tablet) {
+      gap: 24px;
+      margin-bottom: 50px;
+    }
+
+    @media (min-width: @desktop) {
       gap: 24px;
       margin-bottom: 50px;
     }
@@ -190,6 +246,11 @@
       gap: 24px;
       padding: 50px 0;
     }
+
+    @media (min-width: @desktop) {
+      gap: 24px;
+      padding: 50px 0;
+    }
   }
 }
 
@@ -199,6 +260,23 @@
   &--personal {
     @media (min-width: @tablet) {
       grid-template-columns: 167px auto;
+    }
+
+    @media (min-width: @desktop) {
+      grid-template-columns: 174px auto;
+    }
+  }
+
+  &--name {
+    @media (min-width: @tablet) {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+    }
+
+    @media (min-width: @desktop) {
+      width: 700px;
+      gap: 25px;
     }
   }
 }
@@ -213,6 +291,10 @@
     @media (min-width: @tablet) {
       gap: 26px;
     }
+
+    @media (min-width: @desktop) {
+      gap: 28px;
+    }
   }
 
   &--color {
@@ -221,12 +303,28 @@
     @media (min-width: @tablet) {
       gap: 30px;
     }
+
+    @media (min-width: @desktop) {
+      gap: 30px;
+    }
   }
 }
 
 .form__input {
   margin: 0;
   flex-shrink: 0;
+
+  &--name {
+    @media (min-width: @tablet) {
+    flex-grow: 1;
+    }
+  }
+
+  &--special {
+    @media (min-width: @desktop) {
+      width: 700px;
+    }
+  }
 }
 
 .form__label {
@@ -238,6 +336,11 @@
     font-size: 19px;
     line-height: 18px;
   }
+
+  @media (min-width: @desktop) {
+    font-size: 19px;
+    line-height: 18px;
+  }
 }
 
 .form__textarea {
@@ -245,6 +348,10 @@
   width: 100%;
   height: 142px;
   resize: vertical;
+
+  @media (min-width: @desktop) {
+    width: 700px;
+  }
 }
 
 .form__footer {
@@ -254,6 +361,11 @@
     grid-template-columns: 230px auto;
     align-items: center;
     text-align: right;
+  }
+
+  @media (min-width: @desktop) {
+    width: 700px;
+    margin: 0 auto;
   }
 }
 
