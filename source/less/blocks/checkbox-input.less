@@ -4,37 +4,37 @@
   display: grid;
   place-content: center;
   appearance: none;
-  width: 38px;
-  height: 38px;
+  width: min(3.8rem, 57px);
+  height: min(3.8rem, 57px);
   background-color: transparent;
   border: 2px solid @text-secondary;
 
   @media (min-width: @tablet) {
-    width: 52px;
-    height: 52px;
+    width: min(5.2rem, 66px);
+    height: min(5.2rem, 66px);
   }
 
   @media (min-width: @desktop) {
-    width: 52px;
-    height: 52px;
+    width: min(5.2rem, 87px);
+    height: min(5.2rem, 87px);
   }
 
   &:checked::after {
     content: "";
-    width: 24px;
-    height: 17px;
+    width: min(2.4rem, 36px);
+    height: min(1.7rem, 25px);
     background-image: url("../img/sprite.svg#tick");
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-width: @tablet) {
-      width: 31;
-      height: 22px;
+      width: min(3.1rem, 39px);
+      height: min(2.2rem, 28px);
     }
 
     @media (min-width: @desktop) {
-      width: 31;
-      height: 22px;
+      width: min(3.1rem, 52px);
+      height: min(2.2rem, 37px);
     }
   }
 

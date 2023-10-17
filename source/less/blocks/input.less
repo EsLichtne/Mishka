@@ -1,7 +1,7 @@
 @import "../common/variables.less";
 
 .input {
-  padding: 17px 0;
+  padding: min(1.7rem, 25px) 0;
   font-family: @font-primary;
   color: @text-secondary;
   border: none;
@@ -9,35 +9,35 @@
   background-color: transparent;
 
   @media (min-width: @desktop) {
-    padding: 17px 0;
+    padding: min(1.7rem, 28px) 0;
   }
 
   &--special {
-    padding: 14px 0 20px;
+    padding: min(1.4rem, 21px) 0 min(2rem, 30px);
     background-repeat: no-repeat;
 
     @media (min-width: @desktop) {
-      padding: 14px 0 20px;
+      padding: min(1.4rem, 23px) 0 min(2rem, 33px);
     }
   }
 
   &--phone {
     background-image: url("../img/sprite.svg#phone");
-    background-size: 25px 24px;
+    background-size: min(2.5rem, 37px) min(2.4rem, 36px);
     background-position: center right;
 
     @media (min-width: @desktop) {
-      background-size: 25px 24px;
+      background-size: min(2.5rem, 42px) min(2.4rem, 40px);
     }
   }
 
   &--email {
     background-image: url("../img/sprite.svg#email");
-    background-size: 32px 21px;
+    background-size: min(3.2rem, 48px) min(2.1rem, 31px);
     background-position: center right;
 
     @media (min-width: @desktop) {
-      background-size: 32px 21px;
+      background-size: min(3.2rem, 53px) min(2.1rem, 35px);
     }
   }
 

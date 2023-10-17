@@ -1,18 +1,18 @@
 @import "../common/variables.less";
 
 .footnote__text {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: min(1.4rem, 21px);
+  line-height: min(1.6rem, 24px);
   color: @text-secondary;
 
   @media (min-width: @tablet) {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: min(1.7rem, 22px);
+    line-height: min(3rem, 38px);
     text-align: right;
   }
 
   @media (min-width: @desktop) {
-    font-size: 17px;
-    line-height: 30px;
+    font-size: min(1.7rem, 28px);
+    line-height: min(3rem, 50px);
   }
 }

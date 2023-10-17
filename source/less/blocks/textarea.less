@@ -1,6 +1,10 @@
 @import "../common/variables.less";
 
 .textarea {
-  padding: 17px;
+  padding: min(1.7rem, 25px);
   border: 2px solid @text-secondary;
+
+  @media (min-width: @desktop) {
+    padding: min(1.7rem, 28px);
+  }
 }
