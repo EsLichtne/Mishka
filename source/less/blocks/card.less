@@ -67,6 +67,15 @@
   @media (min-width: @desktop) {
     margin-bottom: min(0.6rem, 10px);
   }
+
+  &:focus-visible {
+    outline: 2px solid rgba(0, 0, 0, 0.6);
+  }
+}
+
+.card__title-link:hover .card__title,
+.card__title-link:focus .card__title {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .card__title {
@@ -109,18 +118,9 @@
 .card__footer {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
   margin: 0;
-  padding: min(2.2rem, 33px) 0 min(2.6rem, 39px);
   border-top: 1px solid #ececec;
-
-  @media (min-width: @tablet) {
-    padding: min(2.3rem, 29px) 0 min(2.5rem, 32px);
-  }
-
-  @media (min-width: @desktop) {
-    padding: min(2.3rem, 38px) 0 min(2.5rem, 42px);
-  }
 }
 
 .card__price {
@@ -140,35 +140,52 @@
 }
 
 .card__button {
-  width: min(2rem, 30px);
-  height: min(1.9rem, 28px);
+  width: min(7.2rem, 108px);
+  height: min(7.2rem, 108px);
+  display: grid;
+  align-items: center;
+  justify-content: end;
+
   padding: 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
 
   @media (min-width: @tablet) {
-    width: min(2rem, 25px);
-    height: min(1.8rem, 23px);
+    width: min(7.2rem, 92px);
+    height: min(7.2rem, 92px);
   }
 
   @media (min-width: @desktop) {
-    width: min(2rem, 33px);
-    height: min(1.8rem, 30px);
+    width: min(7.2rem, 120px);
+    height: min(7.2rem, 120px);
   }
 
-  &:hover .card__button-icon {
+  &:hover .card__button-icon,
+  &:focus .card__button-icon {
     color: @color-accent;
   }
 
   &:active {
     opacity: 0.3;
   }
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .card__button-icon {
-  width: 100%;
+  width: min(2rem, 30px);
   height: auto;
   object-fit: contain;
   color: rgba(0, 0, 0, 0.2);
+
+  @media (min-width: @tablet) {
+    width: min(2rem, 26px);
+  }
+
+  @media (min-width: @desktop) {
+    width: min(2rem, 33px);
+  }
 }

@@ -99,7 +99,8 @@
     opacity: 0.5;
   }
 
-  &:hover {
+  &:hover,
+  &:focus {
     &::after {
       opacity: 0.7;
     }
@@ -139,8 +140,10 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #59d5bc;
+      outline: none;
     }
   }
 
@@ -172,8 +175,10 @@
       }
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #46c1ae;
+      outline: none;
     }
   }
 }
