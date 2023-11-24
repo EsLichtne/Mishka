@@ -20,6 +20,7 @@
     imagesrcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
   <link rel="preload" href="img/hero-mobile.webp" as="image" media="(max-width: 639px)"
     imagesrcset="img/hero-mobile.webp 1x, img/hero-mobile@2x.webp 2x">
+    <script defer src="js/index.js" type="module"></script>
 </head>
 
 <body class="page__body">
@@ -272,7 +273,7 @@
       </a>
     </div>
   </footer>
-  <dialog class="page__modal modal" onclick="closeOnBackDropClick(event)">
+  <dialog class="page__modal modal">
     <div class="modal__wrapper basket-adder">
       <h2 class="basket-adder__title">Добавить в&nbsp;корзину</h2>
       <p class=" basket-adder__text">Выберите размер:</p>
@@ -295,7 +296,6 @@
       </form>
     </div>
   </dialog>
-  <script src="js/script.js"></script>
 </body>
 
 </html>
