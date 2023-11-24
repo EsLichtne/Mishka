@@ -21,45 +21,13 @@
     }
   }
 
-  &--phone {
-    background-image: url("../img/sprite.svg#phone");
-    background-size: min(2.5rem, 37px) min(2.4rem, 36px);
-    background-position: center right;
-
-    @media (min-width: @desktop) {
-      background-size: min(2.5rem, 42px) min(2.4rem, 40px);
-    }
-  }
-
-  &--email {
-    background-image: url("../img/sprite.svg#email");
-    background-size: min(3.2rem, 48px) min(2.1rem, 31px);
-    background-position: center right;
-
-    @media (min-width: @desktop) {
-      background-size: min(3.2rem, 53px) min(2.1rem, 35px);
-    }
-  }
-
   &::placeholder {
     color: rgba(0, 0, 0, 0.3);
   }
 
   &:hover,
-  &:active,
-  &:focus {
+  &:focus,
+  &:active {
     border-color: #62d1ba;
-  }
-
-  &--phone:hover,
-  &--phone:active,
-  &--phone:focus {
-    background-image: url("../img/sprite.svg#phone-active");
-  }
-
-  &--email:hover,
-  &--email:active,
-  &--email:focus {
-    background-image: url("../img/sprite.svg#email-active");
   }
 }

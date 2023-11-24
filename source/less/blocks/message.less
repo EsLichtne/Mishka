@@ -1,0 +1,73 @@
+@import "../common/variables.less";
+
+.message {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.message__inner {
+  position: relative;
+  padding: min(2.8rem, 42px) min(2rem, 30px) min(4.6rem, 69px);
+  margin-top: 200px;
+
+  max-width: 100%;
+  width: min(32rem, 480px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  background-color: @color-primary;
+  box-shadow: 0 5px 10px 0 rgba(0, 1, 1, 0.25);
+
+  @media (min-width: @tablet) {
+    width: min(56.6rem, 722px);
+    margin-top: 250px;
+    padding: min(3.7rem, 47px) min(4rem, 51px) min(4.6rem, 59px);
+  }
+
+  @media (min-width: @desktop) {
+    width: min(56.6rem, 945px);
+    margin-top: 300px;
+    padding: min(3.7rem, 62px) min(4rem, 67px) min(4.6rem, 77px);
+  }
+}
+
+.message__title {
+  margin: 0;
+  margin-bottom: min(2rem, 30px);
+  font-size: min(2rem, 30px);
+  line-height: min(2.8rem, 42px);
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet) {
+    max-width: min(38.1rem, 486px);
+    margin-bottom: min(4rem, 51px);
+    font-size: min(3.6rem, 46px);
+    line-height: min(4rem, 51px);
+  }
+
+  @media (min-width: @desktop) {
+    max-width: min(38.1rem, 636px);
+    margin-bottom: min(4rem, 67px);
+    font-size: min(3rem, 50px);
+    line-height: min(3.5rem, 58px);
+  }
+}
+
+.message__button {
+  min-width: 50%;
+}

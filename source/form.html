@@ -100,37 +100,37 @@
             <ul class="form__list form__list--color">
               <li class="form__item">
                 <label class="form__control form__control--color">
-                  <input class="checkbox__input form__input" type="checkbox" name="white" checked>
+                  <input class="checkbox-input form__input" type="checkbox" name="white" checked>
                   <span class="form__label">Белый</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control form__control--color">
-                  <input class="checkbox__input form__input" type="checkbox" name="grey" checked>
+                  <input class="checkbox-input form__input" type="checkbox" name="grey" checked>
                   <span class="form__label">Серый</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control form__control--color">
-                  <input class="checkbox__input form__input" type="checkbox" name="tiffany">
+                  <input class="checkbox-input form__input" type="checkbox" name="tiffany">
                   <span class="form__label">Тиффани</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control form__control--color">
-                  <input class="checkbox__input form__input" type="checkbox" name="black">
+                  <input class="checkbox-input form__input" type="checkbox" name="black">
                   <span class="form__label">Черный</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control form__control--color">
-                  <input class="checkbox__input form__input" type="checkbox" name="pink">
+                  <input class="checkbox-input form__input" type="checkbox" name="pink">
                   <span class="form__label">Розовый</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control form__control--color">
-                  <input class="checkbox__input form__input" type="checkbox" name="orange">
+                  <input class="checkbox-input form__input" type="checkbox" name="orange">
                   <span class="form__label">Оранжевый</span>
                 </label>
               </li>
@@ -150,7 +150,8 @@
               <li class="form__item form__item--name">
                 <label class="form__label" for="surname">Фамилия:</label>
                 <input class="form__input form__input--name input field" id="surname" type="text" name="surname"
-                  placeholder="Укажите фамилию*" required>
+                  placeholder="Укажите фамилию*" required data-pristine-required-message="Укажите вашу фамилию"
+                  pattern="/[а-яёa-z]+$/i">
               </li>
               <li class="form__item form__item--name">
                 <label class="form__label" for="patronymic">Отчество:</label>
@@ -163,14 +164,18 @@
                 <p class="form__headline form__headline--special" aria-hidden="true"><span
                     class="form__headline-text">Тел</span></p>
                 <label class="visually-hidden" for="phone">Телефон.</label>
-                <input class="form__input form__input--special input input--special input--phone field" id="phone"
-                  type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <input class="form__input form__input--special form__input--phone input input--special field" id="phone"
+                  type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required
+                  data-pristine-required-message="Укажите телефон"
+                  pattern="/^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/"
+                  data-pristine-pattern-message="Укажите валидный номер">
               </li>
               <li class="form__item form__item--personal">
                 <label class="form__headline form__headline--special" for="email"><span
                     class="form__headline-text">E-mail</span></label>
-                <input class="form__input form__input--special input input--special input--email field" id="email"
-                  type="email" name="email" placeholder="Ваш Email*" required>
+                <input class="form__input form__input--special form__input--email input input--special field" id="email"
+                  type="email" name="email" placeholder="Ваш Email*" required
+                  data-pristine-required-message="Укажите e-mail" data-pristine-email-message="Укажите валидный адрес">
               </li>
             </ul>
           </fieldset>
@@ -227,6 +232,14 @@
       </a>
     </div>
   </footer>
+  <template id="success-message">
+    <section class="message">
+      <div class="message__inner">
+        <h2 class="message__title">Данные формы успешно отправлены</h2>
+        <button class="message__button button button--primary" type="button">Здорово!</button>
+      </div>
+    </section>
+  </template>
 </body>
 
 </html>

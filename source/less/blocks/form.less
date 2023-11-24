@@ -256,6 +256,7 @@
 
 .form__item {
   display: grid;
+  position: relative;
 
   &--name {
     @media (min-width: @tablet) {
@@ -310,6 +311,46 @@
   }
 }
 
+// error
+
+.form__error {
+  position: absolute;
+  bottom: max(-2rem, -30px);
+  font-size: min(1.5rem, 25px);
+  line-height: min(1.6rem, 27px);
+  color: @color-error;
+
+  @media (min-width: @tablet) {
+    bottom: max(-2.6rem, -33px);
+    font-size: min(1.7rem, 24px);
+    line-height: min(1.6rem, 23px);
+  }
+
+  @media (min-width: @desktop) {
+    bottom: max(-2.8rem, -46px);
+    font-size: min(1.7rem, 32px);
+    line-height: min(1.6rem, 30px);
+  }
+}
+
+.form__item--personal .form__error {
+  @media (min-width: @desktop) {
+    margin-left: min(4.6rem, 77px);
+  }
+}
+
+.form__item--error .form__input {
+  border-color: @color-error;
+}
+
+.form__item--error .form__input--phone {
+  background-image: url("../img/sprite.svg#phone-error");
+}
+
+.form__item--error .form__input--email {
+  background-image: url("../img/sprite.svg#email-error");
+}
+
 .form__input {
   margin: 0;
   flex-shrink: 0;
@@ -324,6 +365,38 @@
     @media (min-width: @desktop) {
       width: min(70rem, 1169px);
     }
+  }
+
+  &--phone {
+    background-image: url("../img/sprite.svg#phone");
+    background-size: min(2.5rem, 37px) min(2.4rem, 36px);
+    background-position: center right;
+
+    @media (min-width: @desktop) {
+      background-size: min(2.5rem, 42px) min(2.4rem, 40px);
+    }
+  }
+
+  &--email {
+    background-image: url("../img/sprite.svg#email");
+    background-size: min(3.2rem, 48px) min(2.1rem, 31px);
+    background-position: center right;
+
+    @media (min-width: @desktop) {
+      background-size: min(3.2rem, 53px) min(2.1rem, 35px);
+    }
+  }
+
+  &--phone:hover,
+  &--phone:focus,
+  &--phone:active {
+    background-image: url("../img/sprite.svg#phone-active");
+  }
+
+  &--email:hover,
+  &--email:focus,
+  &--email:active {
+    background-image: url("../img/sprite.svg#email-active");
   }
 }
 

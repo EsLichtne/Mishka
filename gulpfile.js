@@ -36,7 +36,7 @@ const styles = () => {
 
 // Scripts
 const scripts = () => {
-  return gulp.src("source/js/*.js")
+  return gulp.src("source/js/**/*.js")
     .pipe(terser())
     .pipe(gulp.dest("build/js"))
     .pipe(browser.stream());
@@ -83,7 +83,8 @@ const copy = (done) => {
     "source/fonts/**/*.{woff2,woff}",
     "source/*.ico",
     "source/*.webmanifest",
-    "source/img/favicons/*.*"
+    "source/img/favicons/*.*",
+    "source/vendor/**/*.js"
   ], {
     base: "source"
   })
@@ -118,7 +119,7 @@ const reload = (done) => {
 // Watcher
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series(styles));
-  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/js/**/*.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 

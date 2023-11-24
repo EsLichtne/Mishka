@@ -2,18 +2,18 @@
 
 .field {
   font-family: @font-primary;
-  font-size: 17px;
-  line-height: 18px;
+  font-size: min(1.7rem, 25px);
+  line-height: min(1.8rem, 27px);
   color: @text-primary;
 
   @media (min-width: @tablet) {
-    font-size: 19px;
-    line-height: 18px;
+    font-size: min(1.9rem, 24px);
+    line-height: min(1.8rem, 23px);
   }
 
   @media (min-width: @desktop) {
-    font-size: 19px;
-    line-height: 18px;
+    font-size: min(1.9rem, 32px);
+    line-height: min(1.8rem, 30px);
   }
 
   &::placeholder {
