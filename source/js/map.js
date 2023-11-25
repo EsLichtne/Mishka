@@ -8,7 +8,7 @@ mapContainer.removeAttribute('hidden');
 mapImage.setAttribute('hidden', true);
 
 const iconConfig = {
-  url: '../img/map-pin.svg',
+  url: 'img/map-pin.svg',
   width: 52,
   height: 52,
   anchorX: 26,
