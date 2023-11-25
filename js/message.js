@@ -1,0 +1,1 @@
+const template=document.querySelector("#popup-message"),message=template.content.querySelector(".popup-message").cloneNode(!0),renderMessage=()=>{document.body.appendChild(message),setTimeout((()=>{message.remove()}),1500)};export{renderMessage};
