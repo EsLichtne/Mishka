@@ -11,8 +11,8 @@ const iconConfig = {
   url: 'img/map-pin.svg',
   width: 67,
   height: 100,
-  anchorX: 26,
-  anchorY: 52,
+  anchorX: 32,
+  anchorY: 92,
 };
 
 const cityCenter = {
