@@ -2,7 +2,7 @@
 
 Опубликованная версия🡕
 
-<img src='assets/screenshot.png'>
+<img src='assets/screenshot.webp'>
 
 ## Описание 
 
