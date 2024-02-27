@@ -340,6 +340,11 @@
   font-weight: 700;
   color: @text-primary;
   text-decoration: none;
+  transition: color 0.3s linear;
+
+  &::before {
+    transition: background-color 0.3s linear;
+  }
 
   @media (min-width: @tablet) {
     padding: min(2rem, 25px) 0;
