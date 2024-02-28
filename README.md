@@ -33,7 +33,7 @@ npm ci
 npm run start
 ```
 
-1. Запуск продакшн-сборки (папка `build`)
+3. Запуск продакшн-сборки (папка `build`):
 ```Shell
 npm run build
 ```
